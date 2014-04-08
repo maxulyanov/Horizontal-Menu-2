@@ -2,8 +2,7 @@ $(function(){
 	var defaultSetting = {
 		posTop   : '200px',
 		posLeft  : '100px',
-		widthPad : '10px',
-		elemHeight : $('.submenu li').outerHeight(),
+		widthPad : '15px',
 	};
 	var li = $('ul#index-menu > li');
 
@@ -14,9 +13,9 @@ $(function(){
 			$(subli).each(function(i){
 				console.log('i')
 			$(this).stop(1,1).delay((i++) * 50).animate({
-			left : '0',
+			left : '-60px',
 			opacity : 'show',
-			top : '17px',
+			top : '3px',
 		}, 400, 'swing');
 		});
 		}
@@ -25,26 +24,24 @@ $(function(){
 		$.data(this,'timer', setTimeout($.proxy(function() {
 	    var subli = $(this).find('.submenu > li');	
 		$(subli).stop().animate({
-			padding : '15px',
 			opacity : 'hide',
 		}, 300)
 		.animate({
 			top : defaultSetting.posTop,
 			left : defaultSetting.posLeft,
-			padding : defaultSetting.widthPad,
 		},0)	
 	    }, this), 200));
 
 
 	});
 
-	$('ul.submenu > li').hover(function(){
+	$('ul.submenu > li a').hover(function(){
 		$(this).stop().animate({
-			padding : '15px 10px',
+			padding : '20px 15px',
 		},200);
 	},function(){
 		$(this).stop().animate({
-			padding : '10px',	
+			padding : defaultSetting.widthPad,	
 		},200);
 	});
 });

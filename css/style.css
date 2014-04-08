@@ -47,7 +47,7 @@ body{
 }
 #wrapper{
 	width: 960px;
-	margin: 20px auto;
+	margin: 0px auto;
 }
 .clearfix{
 	display: block;
@@ -57,20 +57,29 @@ body{
 
 ul#index-menu{
 	background: #0099FF;
-	border-bottom: 2px solid #0B8CE2;
-	border-top: 2px solid #5DBDFD;
-	-moz-border-radius: 5px;
-    -webkit-border-radius: 5px;
-    border-radius: 5px;
+	border-bottom: 3px solid #1186D5;
+	-moz-border-radius: 0 0 3px 3px;
+    -webkit-border-radius: 0 0 3px 3px;
+    border-radius: 0 0 3px 3px;
 }
 ul#index-menu > li{
 	float: left;
-	padding: 15px 5px;
-	margin: 0 10px;
+	margin: 0 12px;
 	position: relative;
 }
 ul#index-menu > li > a{
+	display: block;
+	padding: 20px 0;
 	color:#FFF;
+	font-size: 18px;
+}
+ul#index-menu > li > a:hover,
+ul#index-menu > li:hover > a{
+	color: #123044;
+	-moz-transition: color 0.5s ease;
+    -o-transition: color 0.5s ease;
+    -webkit-transition: color 0.5s ease;
+    transition: color 0.5s ease;
 }
 ul#index-menu > li .submenu{
 	position: absolute;
@@ -80,14 +89,18 @@ ul#index-menu > li .submenu li{
 	width: 200px;
 	text-align: center;
 	margin-bottom: 5px;
-	padding: 10px;
 	position: relative;
 	top: 200px;
 	left: 100px;
 	display: none;
+	border-bottom: 3px solid #1186D5;
 	-moz-border-radius: 3px;
     -webkit-border-radius: 3px;
     border-radius: 3px;
+    -moz-transition: -moz-background 0.5s ease;
+    -o-transition: -o-background 0.5s ease;
+    -webkit-transition: -webkit-background 0.5s ease;
+    transition: background 0.5s ease;
 }
 ul#index-menu > li .submenu li:first-child{
 	-moz-border-radius: 0 0 3px 3px;
@@ -96,7 +109,24 @@ ul#index-menu > li .submenu li:first-child{
 }
 ul#index-menu > li .submenu li:hover{
 	background: #5DBDFD;
+	-moz-transition: -moz-background 0.5s ease;
+    -o-transition: -o-background 0.5s ease;
+    -webkit-transition: -webkit-background 0.5s ease;
+    transition: background 0.5s ease;
 }
 ul#index-menu > li .submenu li a{
-	color:#000;
+	display: block;
+	padding: 15px;
+	color:#FFF;
+	-moz-transition: color 0.5s ease;
+    -o-transition: color 0.5s ease;
+    -webkit-transition: color 0.5s ease;
+    transition: color 0.5s ease;
+}
+ul#index-menu > li .submenu li a:hover{
+	color: #123044;
+	-moz-transition: color 0.5s ease;
+    -o-transition: color 0.5s ease;
+    -webkit-transition: color 0.5s ease;
+    transition: color 0.5s ease;
 }

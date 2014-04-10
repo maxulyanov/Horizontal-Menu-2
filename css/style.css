@@ -64,12 +64,15 @@ ul#index-menu{
 }
 ul#index-menu > li{
 	float: left;
-	margin: 0 12px;
 	position: relative;
+	border-left: 1px dashed #FFF;
+}
+ul#index-menu > li:first-child{
+	border-left: none;
 }
 ul#index-menu > li > a{
 	display: block;
-	padding: 20px 0;
+	padding: 20px 17px;
 	color:#FFF;
 	font-size: 18px;
 }
@@ -93,12 +96,12 @@ ul#index-menu > li .submenu{
 }
 ul#index-menu > li .submenu li{
 	background: #0099FF;
-	width: 200px;
+	width: 180px;
 	text-align: center;
 	margin-bottom: 5px;
 	position: relative;
 	top: 200px;
-	left: 100px;
+	left: 55px;
 	display: none;
 	border-bottom: 3px solid #1186D5;
 	border-right: 1px solid #1186D5;

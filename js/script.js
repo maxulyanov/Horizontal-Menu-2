@@ -3,7 +3,7 @@ $(function(){
 	//По умолчанию
 	var defaultSetting = {
 		posTop   : '200px',
-		posLeft  : '100px',
+		posLeft  : '55px',
 		widthPad : '15px',
 	};
 	var li = $('ul#index-menu > li');
@@ -21,9 +21,8 @@ $(function(){
 		if($(this).children('ul.submenu').length != 0){
 			var subli = $(this).find('.submenu > li');
 			$(subli).each(function(i){
-			console.log('i')
-			$(this).stop(1,1).delay((i++) * 50).animate({
-			left : '-60px',
+			$(this).stop(true, true).delay((i++) * 50).animate({
+			left : '-36px',
 			opacity : 'show',
 			top : '3px',
 		}, 400, 'swing');

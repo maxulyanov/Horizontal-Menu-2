@@ -13,4 +13,8 @@ Horizontal-Menu-2
  
 ##Пример работы
 
-Можно посмотреть <a href="http://example.web-ulyanov.ru/frontend/Horizontal-Menu-2/">Здесь</a>
+ - Можно посмотреть <a href="http://example.web-ulyanov.ru/frontend/Horizontal-Menu-2/">Здесь</a>
+
+##Обратная связь
+
+ - Если нашли ошибку в коде, напишите мне на почту - <a href="mailto:web.ulyanov@gmail.com">web.ulyanov@gmail.com</a>
